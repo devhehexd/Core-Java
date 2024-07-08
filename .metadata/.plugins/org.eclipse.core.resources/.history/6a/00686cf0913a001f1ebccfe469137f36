@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class ConditionDemo {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Favorite Season(Spring, Summer, Fall, Winter): ");
+		
+		Scanner sc = new Scanner(System.in);
+		String season = sc.nextLine(); //String은 참조형 타입 -> season 변수는 문자열이 아니라 참조값
+		
+		if (season.equals("Spring")) {
+			System.out.println("봄: 개나리, 진달래");
+		}else if (season.equals("Summer")) {
+			System.out.println("여름: 장미, 아카시아");
+		}else if (season.equals("Fall")) {
+			System.out.println("가을: 백합, 코스모스");
+		}else {
+			System.out.println("겨울: 동백, 매화");
+		}
+	}
+
+}

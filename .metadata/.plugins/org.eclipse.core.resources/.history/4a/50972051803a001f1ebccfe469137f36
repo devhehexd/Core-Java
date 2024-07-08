@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class OpDemo {
+
+	public static void main(String[] args) {
+		
+		//short su = 5;
+		//short result = ~su; //+, - , ~(tilde)는 int
+		
+		//short result = true ? 1970 : 3.14; //삼항연산자는 조건을 먼저 보는 것이 아니라 true와 false의 값을 먼저 봄.
+														  //따라서 1970이 1970.0으로 형변환이 되어 short가 아니게 되므로 에러 발생
+		
+		
+		Scanner sc = new Scanner(System.in);
+		
+		sc.nextInt();
+		
+		System.out.println("값 입력: ");
+		
+		
+		
+
+	}
+
+}
