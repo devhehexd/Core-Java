@@ -19,7 +19,6 @@
     <fullyQualifiedTypeName name="OutPut"/>
     <fullyQualifiedTypeName name="CallbyRefDemo1"/>
     <fullyQualifiedTypeName name="VariableArgumentDemo"/>
-    <fullyQualifiedTypeName name="Car"/>
     <fullyQualifiedTypeName name="ConstructorDemo"/>
     <fullyQualifiedTypeName name="Product"/>
     <fullyQualifiedTypeName name="MyDate"/>
@@ -30,4 +29,7 @@
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="kr.seoul.sesac.util.libs.HumanResource"/>
+    <fullyQualifiedTypeName name="Car"/>
+    <fullyQualifiedTypeName name="ImportDemo"/>
 </qualifiedTypeNameHistroy>
