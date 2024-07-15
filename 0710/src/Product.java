@@ -1,26 +1,18 @@
 public class Product {
 
-//    private String notebook;
-//    private String bolpen;
-//    private String books;
-//    private String pencil;
-//    private String file;
-//    private String diskette;
-//    private String paper;
-
-    private String[] name;
+    private String name;
     private int quantity;
     private int sellPrice;
     private int buyPrice;
     private int transPrice;
     private int margin;
-    private int margPer;
+    private double margPer;
 
-    public String[] getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(String[] name) {
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -64,11 +56,11 @@ public class Product {
         this.margin = margin;
     }
 
-    public int getMargPer() {
+    public double getMargPer() {
         return margPer;
     }
 
-    public void setMargPer(int margPer) {
+    public void setMargPer(double margPer) {
         this.margPer = margPer;
     }
 }

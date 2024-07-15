@@ -1,22 +1,23 @@
+import java.io.File;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class ProductInput {
 
-    void input(Product pd) throws java.io.IOException {
+    void input(Product[] pdArray) throws IOException {
 
-        Product[] arr = new Product[5];
-        Scanner scanner = new Scanner(new java.io.File("productdata.dat"));
+        Scanner scanner = new Scanner(new File("D:\\Workspace\\0710\\productdata.dat"));
 
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = new Product();
+        for (int i = 0; i < pdArray.length; i++) {
+            pdArray[i] = new Product();
             String line = scanner.nextLine();
+            String[] tmpArr = line.split("\\s+");
 
-            String[] arr2 = line.split("\\s+");
-            arr[i].setName(arr2[0].trim());
-            arr[i].setQuantity(Integer.parseInt(arr2[1].trim()));
-            arr[i].setSellPrice(Integer.parseInt(arr2[2].trim()));
-            arr[i].setBuyPrice(Integer.parseInt(arr2[3].trim()));
-            arr[i].setTransPrice(Integer.parseInt(arr2[4].trim()));
+            pdArray[i].setName(tmpArr[0].trim());
+            pdArray[i].setQuantity(Integer.parseInt(tmpArr[1].trim()));
+            pdArray[i].setSellPrice(Integer.parseInt(tmpArr[2].trim()));
+            pdArray[i].setBuyPrice(Integer.parseInt(tmpArr[3].trim()));
+            pdArray[i].setTransPrice(Integer.parseInt(tmpArr[4].trim()));
         }
 
 

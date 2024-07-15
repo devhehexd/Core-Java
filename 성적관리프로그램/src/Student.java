@@ -1,5 +1,5 @@
 
-public class Student {
+public class Student { //extends Object
 	
 	private String hakbun, name;
 	private int kor, eng, math, edp, total;
@@ -87,8 +87,13 @@ public class Student {
 	public void setGrade(char grade) {
 		this.grade = grade;
 	}
-	
-	
-	
+	@Override
+	public String toString() {
+		return String.format("%-5s\t%7s\t%5d\t%5d\t%5d\t%5d\t%5d\t%8.1f\t%5c%n",
+				this.hakbun, this.name, this.kor, this.eng, this.math, this.edp,
+				this.total, this.avg, this.grade);
+	}
+
+
 
 }

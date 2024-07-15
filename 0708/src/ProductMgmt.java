@@ -12,7 +12,7 @@ public class ProductMgmt {
 //		
 //		Product computer = new Product();
 //		computer.name = "컴퓨터";
-//		computer.price = 2000000;
+//		computer.price = 2_000_000;
 //		System.out.printf("name = %s, price = %,d원%n", computer.name, computer.price);
 		
 		Product []	array = new Product[2]; //Product 주소를 넣을 수 있는 공간을 만든 것

@@ -6,7 +6,7 @@ public class SungjukMgmt {
 		Student younghee = new Student();
 		new Input().input(younghee);
 		new Calc().calc(younghee);
-		new OutPut().output(younghee);
+		new Output().output(younghee);
 
 	}
 	
