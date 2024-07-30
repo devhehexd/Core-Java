@@ -15,7 +15,7 @@ public class DBConnection {
     public DBConnection() {
 
         this.info = new Properties();
-        File file = new File("D:\\Workspace\\성적관리프로그램v2\\dbinfo.properties");
+        File file = new File("D:\\Workspace\\PatientManagement\\dbinfo.properties");
 
         try {
             this.info.load(new FileInputStream(file));
