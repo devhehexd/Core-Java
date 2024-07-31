@@ -17,7 +17,7 @@ public interface PatientDao {
      * @param 환자등록번호
      * @return 해당환자 1명
      */
-    PatientVO readPatient(int number);
+    PatientVO readPatient(int number) throws SQLException;
 
     /**
      * 지금까지 등록된 모든 환자 리스트를 반환한다.
@@ -30,7 +30,7 @@ public interface PatientDao {
      * @param 수정할 환자
      * @return 성공여부
      */
-    boolean updatePatient(PatientVO p);
+    boolean updatePatient(PatientVO p) throws SQLException;
 
     /**
      * 환자 등록번호를 입력받아서 해당 환자를 삭제한다.
