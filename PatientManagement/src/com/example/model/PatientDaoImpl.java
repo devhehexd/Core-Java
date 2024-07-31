@@ -98,7 +98,7 @@ public class PatientDaoImpl implements PatientDao {
 	}
 
 	@Override
-	public boolean updatePatient(PatientVO p) throws SQLException {
+	public void updatePatient(PatientVO p) throws SQLException {
 
 		String sql = "{ call sp_update_patient(?, ?, ?, ?, ?, ?, ?, ?) }";
 		CallableStatement cstmt = this.conn.prepareCall(sql);
@@ -115,7 +115,6 @@ public class PatientDaoImpl implements PatientDao {
 
 		DBClose.dbClose(conn, cstmt);
 
-		return true;
 	}
 
 	@Override

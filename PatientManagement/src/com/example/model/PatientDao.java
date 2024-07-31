@@ -30,7 +30,7 @@ public interface PatientDao {
      * @param 수정할 환자
      * @return 성공여부
      */
-    boolean updatePatient(PatientVO p) throws SQLException;
+    void updatePatient(PatientVO p) throws SQLException;
 
     /**
      * 환자 등록번호를 입력받아서 해당 환자를 삭제한다.
